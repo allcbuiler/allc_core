@@ -60,12 +60,21 @@ public class WhereConditionInfo{
 
     private String recordId;
 
+    /**
+     * 是否主记录
+     * */
     private Boolean isMain;
 
+    /**
+     * 表名称
+     * */
     private String tableName;
 
     private String fieldName;
 
+    /**
+     * 关联类型 1 = ; 2 > ; 3 >= ; 4 < ; 5 <= ; 6 != ; 7 like
+     * */
     private int conditionType;
 
     private String conditionValA;

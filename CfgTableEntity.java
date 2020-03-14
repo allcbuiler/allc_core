@@ -36,31 +36,31 @@ public class CfgTableEntity extends CommonEntity {
     }
 
     public String getRemark() {
-        return Remark;
+        return remark;
     }
 
     public void setRemark(String remark) {
-        Remark = remark;
+        this.remark = remark;
     }
 
     /**
-     * 
+     * 表编号
      */
     private String tableCode;
     /**
-     * 
+     * 表类型 ： 1：基础表；2：业务表；3：字段表；4：......
      */
-    private Short tableType;
+    private short tableType;
     /**
-     * 
+     * 英文名称
      */
     private String tableName;
     /**
-     * 
+     * 中文名称
      */
     private String tableNameCn;
     /**
-     * 
+     * 备注
      */
-    private String Remark;
+    private String remark;
 }

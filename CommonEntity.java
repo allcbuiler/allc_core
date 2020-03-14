@@ -1,11 +1,13 @@
 package com.allcb.cc.daoc.entity.common;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 import java.util.UUID;
 
 /**
- * 
- * 
+ * 公共信息
+ * 包括
  *  RecordId ,
  *  RecordCreateUserId ,
  *  RecordCreateDatetime ,
@@ -73,44 +75,43 @@ public class CommonEntity {
     }
 
     /**
-     * 
+     * 记录ID
      * */
     private String recordId = UUID.randomUUID().toString();
 
-//    public String getRecordId(){
-//        if (this.recordId == null || this.recordId == ""){
-//            this.recordId = UUID.randomUUID().toString();
-//            return this.recordId;
-//        }
-//
-//        return this.recordId;
-//    }
-//
-//    public void setRecordId(String recordId){
-//        this.recordId = recordId;
-//    }
-
     /**
-     * 
+     * 记录创建者用户ID
      * */
     private String createUserId ;
 
     /**
-     * 
+     * 记录创建时间
      * */
+//    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createDatetime = new Date();
 
     /**
-     * 
+     * 记录修改者用户ID
      * */
     private String updateUserId ;
 
     /**
-     * 
+     * 记录修改时间
      * */
+//    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date updateDatetime = new Date();
 
-    private Short validStatus = 1;
+    /**
+     * 记录时候有效
+     * 1:有效；0：无效；-1：未设置；
+     * */
+    private short validStatus = 1;
 
-    private Short deleteStatus = 0;
+    /**
+     * 记录是否已经删除
+     * 0：未删除；1：已经删除；-1：未设置；
+     * */
+    private short deleteStatus = 0;
 }

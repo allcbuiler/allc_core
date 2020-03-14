@@ -68,45 +68,45 @@ public class CfgTableRelationEntity extends CommonEntity {
     }
 
     public String getRemark() {
-        return Remark;
+        return remark;
     }
 
     public void setRemark(String remark) {
-        Remark = remark;
+        this.remark = remark;
     }
 
     /**
-     * 
+     * 业务record_id
      */
     private String bizRecordId;
 
     private String bizTableRecordId;
     /**
-     * 
+     * 表record_id
      */
     private String tableRecordId;
     /**
-     * 
+     * 表英文名称
      */
     private String tableName;
     /**
-     * 
+     * 表别名
      */
     private String tableAliasName;
     /**
-     * 
+     * 数据源record_id
      */
     private String dataSourceGuid;
     /**
-     * 
+     * 是否主表
      */
     private String isMasterTable;
     /**
-     * 
+     * 关联类型 ： 1：inner join 内连接；2：left join 左连接；3：right join 右连接；具体查看“枚举数据字典”表
      */
-    private Short relationType;
+    private short relationType;
     /**
-     * 
+     * 备注
      */
-    private String Remark;
+    private String remark;
 }

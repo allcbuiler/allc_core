@@ -76,51 +76,56 @@ public class CfgTableColumnEntity extends CommonEntity {
     }
 
     public String getRemark() {
-        return Remark;
+        return remark;
     }
 
     public void setRemark(String remark) {
-        Remark = remark;
+        this.remark = remark;
     }
 
     /**
-     * 
+     * 表record_id
      */
     private String tableRecordId;
     /**
-     * 
+     * 英文名称
      */
     private String columnName;
     /**
-     * 
+     * 中文名称
      */
     private String columnNameCn;
     /**
-     * 
+     * 字段类型 :
+     *  1: 字符串 varchar;
+     *  2: 数字数据 int short long DECIMAL ;
+     *  3: 日期时间 DATE TIME;
+     *  4: 是否判断 BOOLEAN ;
+     *  5: 二进制 BLOB ;
      */
-    private Short columnType;
+    private short columnType;
     /**
-     * 
+     * 字段长度
      */
-    private Short columnLength;
+    private short columnLength;
     /**
-     * 
+     * 小数点
      */
-    private Short decimalPoint;
+    private short decimalPoint;
     /**
-     * 
+     * 默认值
      */
     private String defaultValue;
     /**
-     * 
+     * 是否可空
      */
-    private Short isNull;
+    private short isNull;
     /**
-     * 
+     * 自增字段
      */
-    private Short autoIncrement;
+    private short autoIncrement;
     /**
-     * 
+     * 备注
      */
-    private String Remark;
+    private String remark;
 }

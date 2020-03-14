@@ -44,12 +44,24 @@ public class RelaConditionInfo{
 
     private String recordId ;
 
+    /**
+     * 是否主记录
+     * */
     private boolean isMain;
 
+    /**
+     * 主表关联条件
+     * */
     private String mainTableFieldName;
 
+    /**
+     * 被关联表关联条件
+     * */
     private String relaTableFieldName;
 
+    /**
+     * 关联类型 1 = ; 2 > ; 3 >= ; 4 < ; 5 <= ; 6 != ; 7 like
+     * */
     private int conditionType;
 }
 

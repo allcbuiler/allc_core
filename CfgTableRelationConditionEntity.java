@@ -100,16 +100,27 @@ public class CfgTableRelationConditionEntity extends CommonEntity {
         this.stopStatus = stopStatus;
     }
 
+    /**业务record_id*/
     private String bizRecordId ;
     private String bizTableRecordId;
+    /**关联主表record_id*/
     private String mainTableRecordId ;
+    /**被关联表record_id*/
     private String relaTableRecordId ;
+    /**关联表字段record_id*/
     private String mainFieldRecordId ;
+    /**被关联表字段record_id*/
     private String relaFieldRecordId ;
-    private Short conditionType ;
+    /**关联条件类型 ： 1：=；2：>；3：>=；4：<；5：<=；6：like；具体查看“枚举数据字典”表*/
+    private short conditionType ;
+    /**关联类型：1 JOIN ； 2 WHERE；*/
     private String relationType ;
+    /**条件固定值A*/
     private String conditionValueA ;
+    /**条件固定值B（第二个值），当between时使用。*/
     private String conditionValueB ;
+    /**备注*/
     private String remark ;
-    private Short stopStatus ;
+    /**是否停用*/
+    private short stopStatus ;
 }
