@@ -6,8 +6,14 @@ import java.util.List;
 
 public class ALLCAPICFGRET {
 
+    /**
+     * 配置结果信息
+     * */
     private BizConfigReqVo bizConfigReqVo;
 
+    /**
+     * 错误信息集合，为空时执行过程正确
+     * */
     private List<String> retInfoList;
 
     public BizConfigReqVo getBizConfigReqVo() {

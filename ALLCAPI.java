@@ -31,7 +31,7 @@ public class ALLCAPI {
     /**
      * 根据会话ID和业务ID获取查询SQL
      * */
-    public native Map<String, ArrayList<Object>> getBizSqlByBizId(ALLCAPIIPT allcapicfg);
+    public native ALLCAPISQLRET getBizSqlByBizId(ALLCAPIIPT allcapicfg);
     /**
      * 根据会话ID和业务ID获取查询SQL
      * */

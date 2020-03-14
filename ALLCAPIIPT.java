@@ -16,15 +16,37 @@ public class ALLCAPIIPT {
      *  0100 ： 显示错误信息
      * */
     private String debuggerLevel = "0111";
+    /**
+     * 业务配置ID
+     * */
     private String bizRid;
+    /**
+     * 会话ID
+     * */
     private String sessionId;
+    /**
+     * 表关联的信息
+     * */
     private List<CfgTableRelationEntity> tableRelationEntityList;
+    /**
+     * 表关联的条件信息
+     * */
     private List<CfgTableRelationConditionEntity> tableRelationConditionEntityList;
+    /**
+     * 显示结果的数据列信息
+     * */
     private List<CfgTableRelationSelectFieldEntity> tableRelationSelectFieldEntityList;
-
+    /**
+     * 数据表信息
+     * */
     private List<CfgTableEntity> tableEntityList;
+    /**
+     * 数据表列信息
+     * */
     private List<CfgTableColumnEntity> tableColumnEntityList;
-
+    /**
+     * 业务配置的参数列表
+     * */
     private List<CfgBizParamEntity> bizParamEntityList;
     /**
      * 请求参数列表
